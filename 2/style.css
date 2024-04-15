@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.resume-section1 {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-right: 20px;
+}
+
+h1 {
+    color: #000;
+    width: 70%;
+    font-size: 50px;
+    text-align: center;
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.date-range {
+    font-style: italic;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    line-height: 25 px;
+    font-size: 20px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    height: 10px;
+}
+
+.job-title {
+    font-size: 20px;
+}
+
+hr {
+    margin-bottom: 20px;
+}
+
+.block {
+    margin: 20px;
+}
