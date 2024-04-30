@@ -1,45 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale">
-    <title>Education Details</title>
-    <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="style.css">
+  
 </head>
 
 <body>
-    <div class="container">
-        <h2>Education Details</h2>
+  <div class="container">
+    <form action="https://github.com/Vikalp-Mishra03" method="post">   
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="contact-name" onkeyup="ValidateName()">
+        <span id="name-error"></span>
+      </div>
 
-        <table>
-            <tr>
-                <th>Degree</th>
-                <th>Year</th>
-                <th>Institution</th>
-                <th>Location</th>
-            </tr>
-            <tr>
-                <td>Bachelor of Computer Application</td>
-                <td>2021 - 2024</td>
-                <td>Shriram Institute of Management and Technology</td>
-                <td>Kashipur, India</td>
-            </tr>
-            <tr>
-                <td>Inter School</td>
-                <td>2020 - 2021</td>
-                <td>M.P. Inter College</td>
-                <td>Ramnagar, India</td>
-            </tr>
-            <tr>
-                <td>High School</td>
-                <td>2018 - 2019</td>
-                <td>M.P. Inter College</td>
-                <td>Ramnagar, India</td>
-            </tr>
-        </table>
-    </div>
+      <div class="input-group">
+        <label>Phone No.</label>
+        <input type="tel" placeholder="123 456 7890" id="contact-phone" onkeyup="ValidatePhone()">
+        <span id="phone-error"></span>
+      </div>
 
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="contact-email" onkeyup="ValidateEmail()">
+        <span id="email-error"></span>
+      </div>
+      <button onclick="return ValidateForm()">Submit</button>
+      <span id="submit-error"></span>
+    </form>
+
+
+  </div>
 </body>
 
 </html>
